@@ -7,8 +7,6 @@
 
 cellType::cellType()
 	{
-		row = 0;
-		col = 0;
 		val = 0;
 		block = 'x';
 		user = false;

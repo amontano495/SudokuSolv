@@ -98,7 +98,6 @@ bool cellTable::checkCol( int x , int attempt )
 bool cellTable::checkBlock( int x , int y , int attempt )
 {
 	char blockSpot = contents[ x ][ y ].block;
-	//int valSpot = contents[ x ][ y ].val;
 
 	for( int i = 0; i < 9; i++ )
 	{
@@ -106,7 +105,6 @@ bool cellTable::checkBlock( int x , int y , int attempt )
 		{
 			if( contents[ i ][ j ].block == blockSpot and attempt == contents[ i ][ j ].val )
 			{
-				//cout << contents[ i ][ j ].block << blockSpot << endl << contents[ i ][ j ].val << valSpot << endl;
 				return false;
 			}
 		}
@@ -146,8 +144,6 @@ void cellTable::showTable()
 		for( int j = 0; j < height; j++ )
 		{
 			cout << contents[ i ][ j ].val << ' ';
-			//if( contents[ i ][ j ].user == true ){ cout << 1 << ' '; }
-			//else{ cout << 0 << ' '; }
 
 			if( j == 2 or j == 5 )
 				{

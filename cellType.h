@@ -13,8 +13,6 @@ using namespace std;
 
 struct cellType
 	{
-		int row;
-		int col;
 		char block;
 		int val;
 		bool user; 
