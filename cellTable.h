@@ -9,6 +9,8 @@
 #include <cstdio>
 #include <stdexcept>
 #include "cellType.h"
+#include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -25,6 +27,7 @@ struct cellTable{
 	bool isFull();
 	void showTable();
 	void inputVal();
+	bool fileRead( char * fileName );
 
 	};
 

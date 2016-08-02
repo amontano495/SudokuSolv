@@ -179,4 +179,41 @@ void cellTable::inputVal()
 	cout << endl;
 }
 
+bool cellTable::fileRead( char * fileName )
+{
+	char * buffer;
+	int x, y;
+
+	x = 0;
+	buffer = new char[ 11 ];
+
+	ifstream read;
+	read.open( fileName );
+
+	for( int i = 0; i < 11; i++ )
+	{
+		read >> buffer;
+		y = 0;
+		for( int j = 0; j < 11; j++ )
+		{
+			if( buffer[ j ] != '|' and buffer[ j ] != '-' )
+			{
+				contents[ x ][ y ].val = ( buffer[ j ] - 48 );
+				if( buffer[ j ] > 48 )
+				{
+					contents[ x ][ y ].user = true;
+				}
+				y++;
+			}
+		}
+
+		if( buffer[ 0 ] != '-' )
+		{
+			x++;
+		}
+	}
+	read.close();
+	return true;
+}
+
 #endif
