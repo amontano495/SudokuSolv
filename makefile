@@ -12,7 +12,7 @@ Main.o : Main.cpp cellType.h cellType.cpp cellTable.h cellType.cpp
 cellType.o : cellType.h cellType.cpp
 	$(CC) $(CFLAGS) cellType.cpp
 
-cellType.o : cellTable.h cellTable.cpp
+cellTable.o : cellTable.h cellTable.cpp
 	$(CC) $(CFLAGS) cellTable.cpp
 
 clean:

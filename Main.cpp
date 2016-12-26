@@ -53,7 +53,7 @@ bool sudoSolv( cellTable &sudok, int currentSpot_x , int currentSpot_y )
 								}
 
 								else
-		                       				 {
+		                       				{
 									return true;
 		                        			}
 
