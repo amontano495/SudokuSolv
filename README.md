@@ -5,17 +5,17 @@ A simple sudoku solving program. Written in C++ and utilizes structs and recursi
 Use makefile to build. Accepts input after running executable on the command line. 
 Accepts input in the form of:
 
-0 0 5 | 2 3 0 | 8 0 0 
-0 0 0 | 0 0 0 | 2 7 0 
-0 1 0 | 4 0 0 | 0 5 9 
-----------------------
-0 0 0 | 7 0 0 | 0 0 0 
-0 4 9 | 3 6 0 | 7 0 5 
-2 7 0 | 5 0 4 | 0 9 6 
-----------------------
-9 0 6 | 0 0 0 | 0 0 0 
-5 0 0 | 6 0 1 | 0 3 0 
-0 2 7 | 9 0 0 | 0 0 8 
+>0 0 5 | 2 3 0 | 8 0 0 
+>0 0 0 | 0 0 0 | 2 7 0 
+>0 1 0 | 4 0 0 | 0 5 9 
+>----------------------
+>0 0 0 | 7 0 0 | 0 0 0 
+>0 4 9 | 3 6 0 | 7 0 5 
+>2 7 0 | 5 0 4 | 0 9 6 
+>----------------------
+>9 0 6 | 0 0 0 | 0 0 0 
+>5 0 0 | 6 0 1 | 0 3 0 
+>0 2 7 | 9 0 0 | 0 0 8 
 
 # Example
 
