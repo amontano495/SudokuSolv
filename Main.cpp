@@ -4,13 +4,14 @@
 #include "cellTable.h"
 #include <unistd.h>
 
+//Sudoking solving function
 bool sudoSolv( cellTable &sudok, int spot_x , int spot_y );
 
 int main()
 {
 	cellTable table;
-//	table.inputVal();
 
+	cout << "Enter the file containing the puzzle to solve\n";
 	char * myInput;
 	myInput = new char [ 255 ];
 	cin >> myInput;
